@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio web</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+                        <!-- HEADER AND NAV-BAR STRUCTURE -->
+    <header>
+        <h1>
+            <a href="index.html">Praise-God</a>
+        </h1>
+        <div class="bx bx-menu" id="menu-icon"></div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+                               <!-- HOME PAGE STRUCTURE -->
+
+    <section id="home">
+        <article>
+            <div class="writeup">
+                <h1>Welcome to My Portfolio Page</h1>
+                <p>My Name Is Ibekwe Praise-God</p>
+                <div class="social">
+                    <a href="https://www.facebook.com"><i class="fa fa-facebook"></i></a>
+                    <a href="https://www.twitter.com"><i class="fa fa-twitter"></i></a>
+                    <a href="tel:09023130113"><i class="fa fa-phone"></i></a>
+                </div>
+            </div>
+        </article>
+        <aside></aside>
+    </section>
+
+    <section id="about">
+        <h1>About <span>Me</span></h1>
+        <div class="image-con">
+            <img src="images/home.jpeg">
+        </div>
+        <p>My name is Ibekwe PraiseGod, am 12 years old, I live at 13 Ide drive fedral housing estate. am in JSS<sup>1</sup>, The name of my school is Deper Life High School</p>
+    </section>
+
+                             <!-- CONTACT STRUCTURE -->
+
+    <section id="contact">
+        <h1>Contact <span>Me!</span></h1>
+        <form action="#">
+            <input type="text" name="name" placeholder="Name" required>
+            <input type="email" name="e-mail" placeholder="Email" required>
+            <input type="text" name="comment" placeholder="Comment" required>
+            <textarea name="message" placeholder="Message" cols="30" rows="10" required></textarea>
+            <button class="btn">Submit</button>
+        </form>
+    </section>
+
+                              <!-- FOOTER STRUCTURE -->
+
+    <footer class="footer">
+        <div class="footer-text">
+            <p>Copyright &copy; 2023 by Praise | All Right Reserved.</p>
+        </div>
+    </footer>
+    <script>
+        const nav = document.querySelector("nav ul");
+        const bar = document.querySelector("#menu-icon");
+
+        bar.addEventListener("click", () => {
+            bar.classList.toggle("bx-x");
+            nav.classList.toggle("active");
+        });
+
+        window.onscroll = () => {
+            bar.classList.remove("bx-x");
+            nav.classList.remove("active");
+        }
+    </script>
+</body>
+</html>
